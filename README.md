@@ -1,4 +1,4 @@
-# Notion Clone - Astro.js Landing Page
+# TarSite - Astro.js Landing Page
 
 A Notion-like landing page built with Astro.js and deployed to Cloudflare Pages.
 
