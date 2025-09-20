@@ -1,16 +1,137 @@
 ---
-
+import '../styles/global.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Notion Clone</title>
+  </head>
+  <body class="bg-notion-light font-sans">
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <!-- Header -->
+      <header class="flex justify-between items-center py-6 border-b border-notion-gray">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-black rounded-sm flex items-center justify-center">
+            <span class="text-white font-bold text-lg">N</span>
+          </div>
+          <h1 class="text-2xl font-bold">Notion</h1>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="text-notion-dark hover:underline">Product</a>
+          <a href="#" class="text-notion-dark hover:underline">Solutions</a>
+          <a href="#" class="text-notion-dark hover:underline">Pricing</a>
+          <a href="#" class="text-notion-dark hover:underline">Resources</a>
+        </nav>
+        <div class="flex space-x-4">
+          <button class="px-4 py-2 text-notion-dark hover:bg-notion-gray rounded-md">Log in</button>
+          <button class="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800">Get Notion free</button>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="py-16 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-notion-dark mb-6">
+          Write, plan, collaborate,<br/>and get organized. All in one place.
+        </h1>
+        <p class="text-xl text-notion-dark mb-10 max-w-2xl mx-auto">
+          Notion is the connected workspace where better, faster work happens.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button class="px-6 py-3 bg-black text-white rounded-md text-lg hover:bg-gray-800">
+            Get Notion free
+          </button>
+          <button class="px-6 py-3 border border-notion-dark text-notion-dark rounded-md text-lg hover:bg-notion-gray">
+            Request a demo
+          </button>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 border border-notion-gray rounded-lg">
+            <div class="text-4xl mb-4">📝</div>
+            <h3 class="text-xl font-bold mb-2">Notes & Docs</h3>
+            <p class="text-notion-dark">
+              Create beautiful notes and documents with our powerful editor.
+            </p>
+          </div>
+          <div class="p-6 border border-notion-gray rounded-lg">
+            <div class="text-4xl mb-4">📅</div>
+            <h3 class="text-xl font-bold mb-2">Tasks & Projects</h3>
+            <p class="text-notion-dark">
+              Plan and track everything from daily tasks to big launches.
+            </p>
+          </div>
+          <div class="p-6 border border-notion-gray rounded-lg">
+            <div class="text-4xl mb-4">👥</div>
+            <h3 class="text-xl font-bold mb-2">Collaboration</h3>
+            <p class="text-notion-dark">
+              Work together in real-time with your team members.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-16 text-center bg-notion-gray rounded-lg my-12">
+        <h2 class="text-3xl font-bold mb-4">Start using Notion today</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Join millions of teams and individuals who use Notion to get more done.
+        </p>
+        <button class="px-6 py-3 bg-black text-white rounded-md text-lg hover:bg-gray-800">
+          Get Notion free
+        </button>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-8 border-t border-notion-gray">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="font-bold mb-4">Product</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-notion-dark hover:underline">Features</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Templates</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Integrations</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Resources</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-notion-dark hover:underline">Blog</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Guides</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Help Center</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Community</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-notion-dark hover:underline">About</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Careers</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Contact</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Security</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Follow Us</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-notion-dark hover:underline">Twitter</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">LinkedIn</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Facebook</a></li>
+              <li><a href="#" class="text-notion-dark hover:underline">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 text-center text-notion-dark">
+          &copy; {new Date().getFullYear()} Notion Clone. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
