@@ -1,0 +1,9 @@
+name = "notion-clone"
+compatibility_date = "2023-12-01"
+
+[site]
+bucket = "./dist"
+entry-point = "."
+
+[build]
+command = "npm run build"
